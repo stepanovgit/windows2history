@@ -1,0 +1,25 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page7117217.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteRule ^yotawords$ page16799043.html [NC]
+RewriteRule ^yotawords/$ page16799043.html [NC]
+
+RewriteRule ^rosneftspecial$ page19753443.html [NC]
+RewriteRule ^rosneftspecial/$ page19753443.html [NC]
+
+RewriteRule ^nastya$ page20643745.html [NC]
+RewriteRule ^nastya/$ page20643745.html [NC]
+
+RewriteRule ^semem$ page22002049.html [NC]
+RewriteRule ^semem/$ page22002049.html [NC]
+
+RewriteRule ^members/ ma_start.html [NC,L]
+
+
